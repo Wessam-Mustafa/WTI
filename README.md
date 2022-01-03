@@ -3,9 +3,11 @@ WTI Social Network JavaScript Project
 ------------------------------------------------------
 WTI Social Network Project :-
 Team:
-1-Wessam Mustafa Abdelrhman (وسام مصطفي عبدالرحمن).
-2-Taha Mohamed Amin (طه محمد أمين).
-3-Isaac Baqe Botros (إسحق باقي بطرس).
+1-Wessam Mustafa Abdelrhman (وسام مصطفي عبدالرحمن).//
+
+2-Taha Mohamed Amin (طه محمد أمين).//
+
+3-Isaac Baqe Botros (إسحق باقي بطرس).//
 
 مشروع موقع تواصل اجتماعي
 
