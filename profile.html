@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="images/logow.png" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body onload="profilePosts()">
+    <div id="topSticky">
+        <ul>
+            <li style="margin-right: 100px; color: white;"><img src="images/logow.png" alt="" srcset="" style="width: 50px;"> Social Network</li>
+            <li><input type="search" name="" id="" placeholder="search..."></li>
+            <li><a href="home.html"><i class="fas fa-home"><br>Home</i></a></li>
+            <li><a href="#news"><i class="fas fa-users"><br>Friends</i></a></li>
+            <li><a href="#contact"><i class="fas fa-bell"><br>Notification</i></a></li>
+            <li><a href="#about"><i class="fas fa-comments"><br>Messages</i></a></li>
+            <li id="imgli"><a href="#about" class="active"><img src="images/avatar1.png" alt="">Leanne Graham</a></li>
+            <li onclick="logout()" style="float: right; padding-right: 40px;"><a href=""><i class="fas fa-sign-out-alt"><br>Logout</i></a></li>
+        </ul>
+    </div>
+    <div class="relative">
+        <div class="absolute">
+            <img src="images/avatar1.png" alt="" srcset="" class="profileimg">
+            <h1 style="display: inline; float: left; margin-top: 70px; font-size: 70px;">Leanne Graham</h1>
+        </div>
+    </div>
+    <center>
+        <div id="leftDivProfile" class="bodyContent leftDiv">
+            <div class="divPostDesign">
+                <div style="padding: 10px;">
+                    <img src="images/avatar1.png" alt="" srcset="" class="postimg" style="width: 10%;">
+                    <textarea name="" id="postTxt" cols="30" rows="4" placeholder="write something..."></textarea>
+                </div>
+                <div class="posticons" style="text-align: right; padding: 15px;">
+                    <input type="file" class="file" id="attachment" style="display: none;"
+                        onchange="fileSelected(this)" />
+                    <button class="file" id="btnAttachment" onclick="openAttachment()" value="File"><i class="fas fa-image"></i></button>
+                    <button><i class="fas fa-camera"></i></button>
+                    <button id="postP" onclick="userProfilePost()">Post</button>
+                </div>
+            </div>
+            <div class="divPostDesign">
+                <div style="text-align: left;">
+                    
+                    <table style="text-align: left;">
+                        <tr>
+                            <td><img src="images/avatar1.png" alt="" srcset="" class="postimg"></td>
+                            <td style="padding-top: 15px;"><h3 style="display: inline;">Leanne Graham</h3>
+                                <p>Published: Dec,30 2021 19:00 PM</p></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <img src="images/post1.jpg" alt="" srcset="" class="pupimg">
+                </div>
+                <div class="react" style="text-align: left;">
+                    20 <i class="fas fa-heart"></i>
+                    10 <i class="fas fa-comment-dots"></i>
+                    2 <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+            <div class="divPostDesign">
+                <div style="text-align: left;">
+                    
+                    <table style="text-align: left;">
+                        <tr>
+                            <td><img src="images/avatar1.png" alt="" srcset="" class="postimg"></td>
+                            <td style="padding-top: 15px;"><h3 style="display: inline;">Leanne Graham</h3>
+                                <p>Published: Dec,30 2021 19:00 PM</p></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <img src="images/post2.jpg" alt="" srcset="" class="pupimg">
+                </div>
+                <div class="react" style="text-align: left;">
+                    20 <i class="fas fa-heart"></i>
+                    10 <i class="fas fa-comment-dots"></i>
+                    2 <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+            <div class="divPostDesign">
+                <div style="text-align: left;">
+                    
+                    <table style="text-align: left;">
+                        <tr>
+                            <td><img src="images/avatar1.png" alt="" srcset="" class="postimg"></td>
+                            <td style="padding-top: 15px;"><h3 style="display: inline;">Leanne Graham</h3>
+                                <p>Published: Dec,30 2021 19:00 PM</p></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <img src="images/post3.jpg" alt="" srcset="" class="pupimg">
+                </div>
+                <div class="react" style="text-align: left;">
+                    20 <i class="fas fa-heart"></i>
+                    10 <i class="fas fa-comment-dots"></i>
+                    2 <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div id="bodyDiv">
+            <div id="rightDiv" class="bodyContent">
+                
+                <div class="divDesign">
+                    <h2 style="text-align: left;">Suggestions</h2>
+                    <hr>
+                    <div class="sugdiv">
+                        <img class="sugimg" src="images/avatar2.png" alt="" srcset="">
+                        <h3 style="margin-left: 10px; display: inline;">Ervin Howell</h3>
+                        <i class="fas fa-plus"></i>
+                    </div><br>
+                    <div class="sugdiv">
+                        <img class="sugimg" src="images/avatar3.png" alt="" srcset="">
+                        <h3 style="margin-left: 10px; display: inline;">Clementine Bauch</h3>
+                        <i class="fas fa-plus"></i>
+                    </div><br>
+                    <div class="sugdiv">
+                        <img class="sugimg" src="images/avatar4.png" alt="" srcset="">
+                        <h3 style="margin-left: 10px; display: inline;">Patricia Lebsack</h3>
+                        <i class="fas fa-plus"></i>
+                    </div><br>
+                    <div class="sugdiv">
+                        <img class="sugimg" src="images/avatar5.png" alt="" srcset="">
+                        <h3 style="margin-left: 10px; display: inline;">Chelsey Dietrich</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
